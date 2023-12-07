@@ -28,7 +28,7 @@ contacts[0].number =
 function lookUpProfile(name , pro) {
     for(var i = 0; i < contacts.length; i++) {
         if(contacts[i].firstName == name) {
-            return contacts[i][pro];
+            return contacts[i][pro] || "no such property";
         }
     }
     return "No such contact"
